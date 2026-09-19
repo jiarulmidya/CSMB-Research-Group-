@@ -329,23 +329,178 @@
         /* =========================
            PEOPLE
         ========================== */
+/* =========================================================
+   PEOPLE SECTION
+   ========================================================= */
 
-        .person-card {
+.people-section {
+    margin-top: 60px;
+}
 
-            background: white;
+.people-category {
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
 
-            border: 1px solid #d5e5e5;
+.people-category h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 27px;
+    color: #0B2E59;
+    margin-bottom: 8px;
+}
 
-            border-radius: 10px;
+.people-category-line {
+    width: 55px;
+    height: 3px;
+    background: #b45f52;
+    margin-bottom: 25px;
+}
 
-            padding: 30px;
 
-            display: flex;
+/* Each person occupies one complete row */
 
-            align-items: center;
+.person-card {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #d5e1e8;
+    border-left: 5px solid #0B2E59;
+    border-radius: 10px;
+    padding: 25px 30px;
+    margin-bottom: 22px;
 
-            gap: 30px;
-        }
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    box-sizing: border-box;
+
+    box-shadow: 0 4px 15px rgba(11, 46, 89, 0.06);
+
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.person-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 22px rgba(11, 46, 89, 0.12);
+}
+
+
+/* Research scholar cards */
+
+.research-scholar-card {
+    border-left-color: #b45f52;
+}
+
+
+/* Master student cards */
+
+.master-student-card {
+    border-left-color: #6b7c93;
+}
+
+
+/* Circular photographs */
+
+.person-photo {
+    width: 115px;
+    height: 115px;
+    object-fit: cover;
+    border-radius: 50%;
+    flex-shrink: 0;
+    border: 3px solid #0B2E59;
+}
+
+.research-photo {
+    border-color: #b45f52;
+}
+
+.master-photo {
+    border-color: #6b7c93;
+}
+
+
+/* Person information */
+
+.person-info {
+    flex: 1;
+}
+
+.person-role {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #b45f52;
+    margin-bottom: 7px;
+}
+
+.person-name {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 27px;
+    color: #0B2E59;
+    margin: 0 0 8px 0;
+}
+
+.person-details {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #506474;
+    margin: 0;
+}
+
+
+/* Research description */
+
+.person-research {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #526775;
+    margin-top: 12px;
+}
+
+
+/* Research tags */
+
+.person-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 12px;
+}
+
+.person-tag {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    color: #0B2E59;
+    background: #edf4f9;
+    border: 1px solid #cbdde9;
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .person-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .person-photo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .person-name {
+        font-size: 24px;
+    }
+}
+       
 
 
         .person-card h3 {
