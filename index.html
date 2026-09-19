@@ -329,199 +329,167 @@
         /* =========================
            PEOPLE
         ========================== */
-/* =========================================================
-   PEOPLE SECTION
-   ========================================================= */
 
-.people-section {
-    margin-top: 60px;
-}
+        .people-section {
+            margin-top: 60px;
+        }
 
-.people-category {
-    margin-top: 45px;
-    margin-bottom: 20px;
-}
+        .people-category {
+            margin-top: 45px;
+            margin-bottom: 20px;
+        }
 
-.people-category h3 {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 27px;
-    color: #0B2E59;
-    margin-bottom: 8px;
-}
-
-.people-category-line {
-    width: 55px;
-    height: 3px;
-    background: #b45f52;
-    margin-bottom: 25px;
-}
-
-
-/* Each person occupies one complete row */
-
-.person-card {
-    width: 100%;
-    background: #ffffff;
-    border: 1px solid #d5e1e8;
-    border-left: 5px solid #0B2E59;
-    border-radius: 10px;
-    padding: 25px 30px;
-    margin-bottom: 22px;
-
-    display: flex;
-    align-items: center;
-    gap: 30px;
-
-    box-sizing: border-box;
-
-    box-shadow: 0 4px 15px rgba(11, 46, 89, 0.06);
-
-    transition: transform 0.25s ease,
-                box-shadow 0.25s ease;
-}
-
-.person-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 22px rgba(11, 46, 89, 0.12);
-}
-
-
-/* Research scholar cards */
-
-.research-scholar-card {
-    border-left-color: #b45f52;
-}
-
-
-/* Master student cards */
-
-.master-student-card {
-    border-left-color: #6b7c93;
-}
-
-
-/* Circular photographs */
-
-.person-photo {
-    width: 115px;
-    height: 115px;
-    object-fit: cover;
-    border-radius: 50%;
-    flex-shrink: 0;
-    border: 3px solid #0B2E59;
-}
-
-.research-photo {
-    border-color: #b45f52;
-}
-
-.master-photo {
-    border-color: #6b7c93;
-}
-
-
-/* Person information */
-
-.person-info {
-    flex: 1;
-}
-
-.person-role {
-    font-family: Arial, sans-serif;
-    font-size: 11px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #b45f52;
-    margin-bottom: 7px;
-}
-
-.person-name {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 27px;
-    color: #0B2E59;
-    margin: 0 0 8px 0;
-}
-
-.person-details {
-    font-family: Arial, sans-serif;
-    font-size: 15px;
-    line-height: 1.7;
-    color: #506474;
-    margin: 0;
-}
-
-
-/* Research description */
-
-.person-research {
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.7;
-    color: #526775;
-    margin-top: 12px;
-}
-
-
-/* Research tags */
-
-.person-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 7px;
-    margin-top: 12px;
-}
-
-.person-tag {
-    font-family: Arial, sans-serif;
-    font-size: 11px;
-    color: #0B2E59;
-    background: #edf4f9;
-    border: 1px solid #cbdde9;
-    border-radius: 15px;
-    padding: 5px 10px;
-}
-
-
-/* Mobile */
-
-@media (max-width: 700px) {
-
-    .person-card {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .person-photo {
-        width: 100px;
-        height: 100px;
-    }
-
-    .person-name {
-        font-size: 24px;
-    }
-}
-       
-
-
-        .person-card h3 {
-
-            color: #147d86;
-
+        .people-category h3 {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 27px;
+            color: #0B2E59;
             margin-bottom: 8px;
         }
 
-
-        .person-card p {
-
-            color: #50717a;
+        .people-category-line {
+            width: 55px;
+            height: 3px;
+            background: #b45f52;
+            margin-bottom: 25px;
         }
+
+        /* One person occupies one complete row */
+
+        .person-card {
+            width: 100%;
+            background: #ffffff;
+            border: 1px solid #d5e1e8;
+            border-left: 5px solid #0B2E59;
+            border-radius: 10px;
+            padding: 25px 30px;
+            margin-bottom: 22px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            box-sizing: border-box;
+            box-shadow: 0 4px 15px rgba(11, 46, 89, 0.06);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .person-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 22px rgba(11, 46, 89, 0.12);
+        }
+
+        .research-scholar-card {
+            border-left-color: #b45f52;
+        }
+
+        .master-student-card {
+            border-left-color: #6b7c93;
+        }
+
+        .person-photo,
+        .person-placeholder {
+            width: 115px;
+            height: 115px;
+            object-fit: cover;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
         .person-photo {
-          width: 80px;
-          height: 80px;
-          object-fit: cover;
-          border-radius: 50%;
-          border: 2px solid #0B2E59;
-       }
+            border: 3px solid #0B2E59;
+        }
+
+        .research-photo {
+            border-color: #b45f52;
+        }
+
+        .master-photo {
+            border-color: #6b7c93;
+        }
+
+        .person-placeholder {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f1f5f8;
+            border: 3px solid #b45f52;
+            color: #0B2E59;
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 28px;
+        }
+
+        .master-placeholder {
+            border-color: #6b7c93;
+        }
+
+        .person-info {
+            flex: 1;
+        }
+
+        .person-role {
+            font-family: Arial, sans-serif;
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #b45f52;
+            margin-bottom: 7px;
+        }
+
+        .person-name {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 27px;
+            color: #0B2E59;
+            margin: 0 0 8px 0;
+        }
+
+        .person-details {
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+            line-height: 1.7;
+            color: #506474;
+            margin: 0;
+        }
+
+        .person-research {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.7;
+            color: #526775;
+            margin-top: 12px;
+        }
+
+        .person-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 7px;
+            margin-top: 12px;
+        }
+
+        .person-tag {
+            font-family: Arial, sans-serif;
+            font-size: 11px;
+            color: #0B2E59;
+            background: #edf4f9;
+            border: 1px solid #cbdde9;
+            border-radius: 15px;
+            padding: 5px 10px;
+        }
+
+        @media (max-width: 700px) {
+            .person-card {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .person-photo,
+            .person-placeholder {
+                width: 100px;
+                height: 100px;
+            }
+
+            .person-name {
+                font-size: 24px;
+            }
+        }
+
 
         /* =========================
            FOOTER
@@ -959,94 +927,392 @@
          PEOPLE
     ========================== -->
 
-    <section id="people">
+    <section id="people" class="people-section">
 
-    <h2 class="section-title">
-        People
-    </h2>
+        <h2 class="section-title">
+            People
+        </h2>
 
-    <!-- Principal Investigator -->
-    <div class="person-card">
 
-        <div>
+        <!-- =========================
+             PRINCIPAL INVESTIGATOR
+        ========================== -->
+
+        <div class="people-category">
+
             <h3>
                 Principal Investigator
             </h3>
 
-            <p>
-                <strong>
-                    Dr. Jiarul Midya
-                </strong>
-                <br>
-                Assistant Professor
-                <br>
-                Department of Physics
-                <br>
-                IIT Bhubaneswar
-            </p>
+            <div class="people-category-line"></div>
+
         </div>
 
-    </div>
+
+        <div class="person-card">
+
+            <img
+                src="jiarul_midya.png"
+                alt="Dr. Jiarul Midya"
+                class="person-photo"
+            >
+
+            <div class="person-info">
+
+                <div class="person-role">
+                    Principal Investigator
+                </div>
+
+                <h3 class="person-name">
+                    Dr. Jiarul Midya
+                </h3>
+
+                <p class="person-details">
+                    Assistant Professor
+                    <br>
+                    Department of Physics
+                    <br>
+                    Indian Institute of Technology Bhubaneswar
+                </p>
+
+                <p class="person-research">
+                    Computational soft matter, active matter,
+                    biophysics, complex systems and statistical physics.
+                </p>
+
+                <div class="person-tags">
+
+                    <span class="person-tag">
+                        Soft Matter
+                    </span>
+
+                    <span class="person-tag">
+                        Active Matter
+                    </span>
+
+                    <span class="person-tag">
+                        Biophysics
+                    </span>
+
+                    <span class="person-tag">
+                        Statistical Physics
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
 
 
-    <!-- Research Scholar -->
-    <div class="person-card">
 
-        <img
-            src="ajit_website.png"
-            alt="Ajit Kumar Sahu"
-            class="person-photo"
-        >
+        <!-- =========================
+             RESEARCH SCHOLARS
+        ========================== -->
 
-        <div>
+        <div class="people-category">
 
             <h3>
-                Research Scholar
+                Research Scholars
             </h3>
 
-            <p>
-                <strong>
+            <div class="people-category-line"></div>
+
+        </div>
+
+
+        <!-- AJIT KUMAR SAHU -->
+
+        <div class="person-card research-scholar-card">
+
+            <img
+                src="ajit_website.png"
+                alt="Ajit Kumar Sahu"
+                class="person-photo research-photo"
+            >
+
+            <div class="person-info">
+
+                <div class="person-role">
+                    Research Scholar
+                </div>
+
+                <h3 class="person-name">
                     Ajit Kumar Sahu
-                </strong>
-                <br>
-                Ph.D. Scholar
-                <br>
-                Department of Physics
-                <br>
-                IIT Bhubaneswar
-            </p>
+                </h3>
+
+                <p class="person-details">
+                    Ph.D. Scholar
+                    <br>
+                    Department of Physics
+                    <br>
+                    Indian Institute of Technology Bhubaneswar
+                </p>
+
+                <p class="person-research">
+                    Research interests in computational soft matter,
+                    biophysics and molecular simulations.
+                </p>
+
+                <div class="person-tags">
+
+                    <span class="person-tag">
+                        Computational Physics
+                    </span>
+
+                    <span class="person-tag">
+                        Soft Matter
+                    </span>
+
+                    <span class="person-tag">
+                        Biophysics
+                    </span>
+
+                </div>
+
+            </div>
 
         </div>
 
-    </div>
 
-</section>
+        <!-- SURYA NARAYAN SAHOO -->
 
-    <!-- =========================
-         PUBLICATIONS
-    ========================== -->
+        <div class="person-card research-scholar-card">
 
-    <section id="publications">
+            <img
+                src="surya_website.png"
+                alt="Surya Narayan Sahoo"
+                class="person-photo research-photo"
+            >
 
+            <div class="person-info">
 
-        <h2 class="section-title">
-            Publications
-        </h2>
+                <div class="person-role">
+                    Research Scholar
+                </div>
 
+                <h3 class="person-name">
+                    Surya Narayan Sahoo
+                </h3>
 
-        <div class="card">
+                <p class="person-details">
+                    Ph.D. Scholar
+                    <br>
+                    Department of Physics
+                    <br>
+                    Indian Institute of Technology Bhubaneswar
+                </p>
 
+                <p class="person-research">
+                    Research interests in computational soft matter
+                    and biophysical systems.
+                </p>
 
-            <p>
+                <div class="person-tags">
 
-                Research publications, preprints and related scientific
-                contributions will be listed here.
+                    <span class="person-tag">
+                        Soft Matter
+                    </span>
 
-            </p>
+                    <span class="person-tag">
+                        Computational Physics
+                    </span>
 
+                    <span class="person-tag">
+                        Biophysics
+                    </span>
+
+                </div>
+
+            </div>
 
         </div>
 
+
+        <!-- PARIMITA SAHU -->
+
+        <div class="person-card research-scholar-card">
+
+            <div class="person-placeholder">
+                PS
+            </div>
+
+            <div class="person-info">
+
+                <div class="person-role">
+                    Research Scholar
+                </div>
+
+                <h3 class="person-name">
+                    Parimita Sahu
+                </h3>
+
+                <p class="person-details">
+                    Ph.D. Scholar
+                    <br>
+                    Department of Physics
+                    <br>
+                    Indian Institute of Technology Bhubaneswar
+                </p>
+
+                <p class="person-research">
+                    Research interests in computational and theoretical
+                    studies of soft and biological matter.
+                </p>
+
+                <div class="person-tags">
+
+                    <span class="person-tag">
+                        Soft Matter
+                    </span>
+
+                    <span class="person-tag">
+                        Biophysics
+                    </span>
+
+                    <span class="person-tag">
+                        Computational Modeling
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- SAUBHAGYA LENKA -->
+
+        <div class="person-card research-scholar-card">
+
+            <div class="person-placeholder">
+                SL
+            </div>
+
+            <div class="person-info">
+
+                <div class="person-role">
+                    Research Scholar
+                </div>
+
+                <h3 class="person-name">
+                    Saubhagya Lenka
+                </h3>
+
+                <p class="person-details">
+                    Ph.D. Scholar
+                    <br>
+                    Department of Physics
+                    <br>
+                    Indian Institute of Technology Bhubaneswar
+                </p>
+
+                <p class="person-research">
+                    Research interests in computational biophysics,
+                    biomolecular condensates, membrane dynamics and
+                    cytoskeletal networks.
+                </p>
+
+                <div class="person-tags">
+
+                    <span class="person-tag">
+                        Computational Biophysics
+                    </span>
+
+                    <span class="person-tag">
+                        Biomolecular Condensates
+                    </span>
+
+                    <span class="person-tag">
+                        Membrane Dynamics
+                    </span>
+
+                    <span class="person-tag">
+                        Cytoskeletal Networks
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             MASTER STUDENTS
+        ========================== -->
+
+        <div class="people-category">
+
+            <h3>
+                Master Students
+            </h3>
+
+            <div class="people-category-line"></div>
+
+        </div>
+
+
+        <!-- MASTER STUDENT 1 -->
+
+        <div class="person-card master-student-card">
+
+            <div class="person-placeholder master-placeholder">
+                MS
+            </div>
+
+            <div class="person-info">
+
+                <div class="person-role">
+                    Master Student
+                </div>
+
+                <h3 class="person-name">
+                    Student Name
+                </h3>
+
+                <p class="person-details">
+                    M.Sc. Student
+                    <br>
+                    Department of Physics
+                    <br>
+                    Indian Institute of Technology Bhubaneswar
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- MASTER STUDENT 2 -->
+
+        <div class="person-card master-student-card">
+
+            <div class="person-placeholder master-placeholder">
+                MS
+            </div>
+
+            <div class="person-info">
+
+                <div class="person-role">
+                    Master Student
+                </div>
+
+                <h3 class="person-name">
+                    Student Name
+                </h3>
+
+                <p class="person-details">
+                    M.Sc. Student
+                    <br>
+                    Department of Physics
+                    <br>
+                    Indian Institute of Technology Bhubaneswar
+                </p>
+
+            </div>
+
+        </div>
 
     </section>
 
