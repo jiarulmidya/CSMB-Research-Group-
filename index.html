@@ -610,6 +610,190 @@
 
         }
 
+
+        /* =========================
+           RESEARCH SCHOLAR CARDS
+           ========================= */
+
+        .research-scholar-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 24px;
+            width: 100%;
+        }
+
+        .research-scholar-grid .research-scholar-card {
+            width: 100%;
+            background: #ffffff;
+            border: 1px solid #d5e1e8;
+            border-left: 1px solid #d5e1e8;
+            border-radius: 8px;
+            padding: 0;
+            margin-bottom: 0;
+            display: block;
+            overflow: hidden;
+            box-sizing: border-box;
+            box-shadow: 0 4px 15px rgba(11, 46, 89, 0.06);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .research-scholar-grid .research-scholar-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 22px rgba(11, 46, 89, 0.12);
+        }
+
+        .research-scholar-grid .research-photo {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+            border: none;
+            border-bottom: 2px solid #147d86;
+            border-radius: 0;
+        }
+
+        .research-scholar-grid .person-info {
+            padding: 16px 16px 18px 16px;
+        }
+
+        .research-scholar-grid .person-role {
+            font-size: 10px;
+            letter-spacing: 1.5px;
+            margin-bottom: 7px;
+        }
+
+        .research-scholar-grid .person-name {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 19px;
+            font-weight: bold;
+            color: #073b4c;
+            margin: 0 0 8px 0;
+        }
+
+        .scholar-id {
+            font-family: "Courier New", monospace;
+            font-size: 11px;
+            color: #008c8c;
+            margin: 0 0 9px 0;
+        }
+
+        .scholar-status {
+            display: inline-block;
+            background: #e7f2f2;
+            color: #087d82;
+            border-radius: 15px;
+            padding: 4px 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 11px;
+            margin-bottom: 9px;
+        }
+
+        .research-scholar-grid .person-details {
+            font-size: 12.5px;
+            line-height: 1.55;
+            color: #506474;
+            margin: 0;
+        }
+
+        .research-scholar-grid .person-research {
+            font-size: 12px;
+            line-height: 1.55;
+            color: #526775;
+            margin-top: 10px;
+        }
+
+        .scholar-heading {
+            font-family: "Courier New", monospace;
+            font-size: 11px;
+            letter-spacing: 0.5px;
+            color: #087d82;
+            margin: 13px 0 7px 0;
+        }
+
+        .scholar-topics {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .scholar-topics li {
+            position: relative;
+            padding-left: 13px;
+            margin-bottom: 6px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 11.5px;
+            line-height: 1.45;
+            color: #173b45;
+        }
+
+        .scholar-topics li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #087d82;
+            font-size: 9px;
+        }
+
+        .scholar-tools {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+        }
+
+        .scholar-tools span {
+            display: inline-block;
+            background: #0b2948;
+            color: #8fe3e0;
+            border-radius: 2px;
+            padding: 4px 7px;
+            font-family: "Courier New", monospace;
+            font-size: 10px;
+        }
+
+        .scholar-links {
+            display: flex;
+            gap: 6px;
+            margin-top: 13px;
+        }
+
+        .scholar-links a {
+            width: 28px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            border-radius: 6px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        .linkedin-link {
+            background: #3b82f6;
+        }
+
+        .email-link {
+            background: #155276;
+        }
+
+        @media (max-width: 1050px) and (min-width: 801px) {
+            .research-scholar-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 800px) {
+            .research-scholar-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .research-scholar-grid .research-photo {
+                height: 260px;
+            }
+        }
+
     </style>
 
 </head>
@@ -1023,235 +1207,252 @@
         </div>
 
 
-        <!-- AJIT KUMAR SAHU -->
+        <div class="research-scholar-grid">
 
-        <div class="person-card research-scholar-card">
 
-            <img
-                src="ajit_website.png"
-                alt="Ajit Kumar Sahu"
-                class="person-photo research-photo"
-            >
+            <!-- AJIT KUMAR SAHU -->
 
-            <div class="person-info">
+            <div class="person-card research-scholar-card">
 
-                <div class="person-role">
-                    Research Scholar
-                </div>
+                <img
+                    src="ajit_website.png"
+                    alt="Ajit Kumar Sahu"
+                    class="person-photo research-photo"
+                >
 
-                <h3 class="person-name">
-                    Ajit Kumar Sahu
-                </h3>
+                <div class="person-info">
 
-                <p class="person-details">
-                    Ph.D. Scholar
-                    <br>
-                    Department of Physics
-                    <br>
-                    Indian Institute of Technology Bhubaneswar
-                </p>
+                    <div class="person-role">
+                        Research Scholar
+                    </div>
 
-                <p class="person-research">
-                    Research interests in computational soft matter,
-                    biophysics and molecular simulations.
-                </p>
+                    <h3 class="person-name">
+                        Ajit Kumar Sahu
+                    </h3>
 
-                <div class="person-tags">
-
-                    <span class="person-tag">
-                        Computational Physics
+                    <span class="scholar-status">
+                        PhD Scholar
                     </span>
 
-                    <span class="person-tag">
-                        Soft Matter
-                    </span>
+                    <p class="person-details">
+                        Ph.D. Scholar
+                        <br>
+                        Department of Physics
+                        <br>
+                        Indian Institute of Technology Bhubaneswar
+                    </p>
 
-                    <span class="person-tag">
-                        Biophysics
-                    </span>
+                    <h4 class="scholar-heading">
+                        RESEARCH TOPICS
+                    </h4>
 
-                </div>
+                    <ul class="scholar-topics">
+                        <li>Computational Soft Matter</li>
+                        <li>Biophysics</li>
+                        <li>Molecular Simulations</li>
+                    </ul>
 
-            </div>
+                    <h4 class="scholar-heading">
+                        TOOLS &amp; SOFTWARE
+                    </h4>
 
-        </div>
-
-
-        <!-- SURYA NARAYAN SAHOO -->
-
-        <div class="person-card research-scholar-card">
-
-            <img
-                src="surya_website.png"
-                alt="Surya Narayan Sahoo"
-                class="person-photo research-photo"
-            >
-
-            <div class="person-info">
-
-                <div class="person-role">
-                    Research Scholar
-                </div>
-
-                <h3 class="person-name">
-                    Surya Narayan Sahoo
-                </h3>
-
-                <p class="person-details">
-                    Ph.D. Scholar
-                    <br>
-                    Department of Physics
-                    <br>
-                    Indian Institute of Technology Bhubaneswar
-                </p>
-
-                <p class="person-research">
-                    Research interests Active matter
-                    systems.
-                </p>
-
-                <div class="person-tags">
-
-                    <span class="person-tag">
-                        Soft Matter
-                    </span>
-
-                    <span class="person-tag">
-                        Computational Physics
-                    </span>
-
-                    <span class="person-tag">
-                        Biophysics
-                    </span>
+                    <div class="scholar-tools">
+                        <span>Python</span>
+                        <span>Fortran</span>
+                        <span>LAMMPS</span>
+                        <span>VMD</span>
+                    </div>
 
                 </div>
 
             </div>
 
-        </div>
 
+            <!-- SURYA NARAYAN SAHOO -->
 
-        <!-- PARIMITA SAHU -->
+            <div class="person-card research-scholar-card">
 
-        <div class="person-card research-scholar-card">
+                <img
+                    src="surya_website.png"
+                    alt="Surya Narayan Sahoo"
+                    class="person-photo research-photo"
+                >
 
-        
-            <img
-                src="parimita.jpg"
-                alt="Parimita Sahu"
-                class="person-photo research-photo"
-            >
-            
+                <div class="person-info">
 
-            <div class="person-info">
+                    <div class="person-role">
+                        Research Scholar
+                    </div>
 
-                <div class="person-role">
-                    Research Scholar
-                </div>
+                    <h3 class="person-name">
+                        Surya Narayan Sahoo
+                    </h3>
 
-                <h3 class="person-name">
-                    Parimita Sahu
-                </h3>
-
-                <p class="person-details">
-                    Ph.D. Scholar
-                    <br>
-                    Department of Physics
-                    <br>
-                    Indian Institute of Technology Bhubaneswar
-                </p>
-
-                <p class="person-research">
-                    Research interests in computational and theoretical
-                    studies of soft and biological matter.
-                </p>
-
-                <div class="person-tags">
-
-                    <span class="person-tag">
-                        Soft Matter
+                    <span class="scholar-status">
+                        PhD Scholar
                     </span>
 
-                    <span class="person-tag">
-                        Biophysics
-                    </span>
+                    <p class="person-details">
+                        Ph.D. Scholar
+                        <br>
+                        Department of Physics
+                        <br>
+                        Indian Institute of Technology Bhubaneswar
+                    </p>
 
-                    <span class="person-tag">
-                        Computational Modeling
-                    </span>
+                    <h4 class="scholar-heading">
+                        RESEARCH TOPICS
+                    </h4>
+
+                    <ul class="scholar-topics">
+                        <li>Active Matter Systems</li>
+                        <li>Soft Matter</li>
+                        <li>Computational Physics</li>
+                    </ul>
+
+                    <h4 class="scholar-heading">
+                        TOOLS &amp; SOFTWARE
+                    </h4>
+
+                    <div class="scholar-tools">
+                        <span>Python</span>
+                        <span>Fortran</span>
+                        <span>LAMMPS</span>
+                        <span>VMD</span>
+                    </div>
 
                 </div>
 
             </div>
 
+
+            <!-- PARIMITA SAHU -->
+
+            <div class="person-card research-scholar-card">
+
+                <img
+                    src="parimita.jpg"
+                    alt="Parimita Sahu"
+                    class="person-photo research-photo"
+                >
+
+                <div class="person-info">
+
+                    <div class="person-role">
+                        Research Scholar
+                    </div>
+
+                    <h3 class="person-name">
+                        Parimita Sahu
+                    </h3>
+
+                    <span class="scholar-status">
+                        PhD Scholar
+                    </span>
+
+                    <p class="person-details">
+                        Ph.D. Scholar
+                        <br>
+                        Department of Physics
+                        <br>
+                        Indian Institute of Technology Bhubaneswar
+                    </p>
+
+                    <h4 class="scholar-heading">
+                        RESEARCH TOPICS
+                    </h4>
+
+                    <ul class="scholar-topics">
+                        <li>Soft Matter</li>
+                        <li>Biophysics</li>
+                        <li>Computational Modeling</li>
+                    </ul>
+
+                    <h4 class="scholar-heading">
+                        TOOLS &amp; SOFTWARE
+                    </h4>
+
+                    <div class="scholar-tools">
+                        <span>Python</span>
+                        <span>Computational Modeling</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SAUBHAGYA LENKA -->
+
+            <div class="person-card research-scholar-card">
+
+                <img
+                    src="Saubhagya_imag.jpg"
+                    alt="Saubhagya Lenka"
+                    class="person-photo research-photo"
+                >
+
+                <div class="person-info">
+
+                    <div class="person-role">
+                        Research Scholar
+                    </div>
+
+                    <h3 class="person-name">
+                        Saubhagya Lenka
+                    </h3>
+
+                    <span class="scholar-status">
+                        PhD Scholar
+                    </span>
+
+                    <p class="person-details">
+                        Ph.D. Scholar
+                        <br>
+                        Department of Physics
+                        <br>
+                        Indian Institute of Technology Bhubaneswar
+                        <br><br>
+
+                        <strong>Education:</strong>
+                        <br>
+                        M.Sc. in Physics — Indian Institute of Technology Bhubaneswar
+                        <br>
+                        B.Sc. — Utkal University, Odisha
+                    </p>
+
+                    <h4 class="scholar-heading">
+                        RESEARCH TOPICS
+                    </h4>
+
+                    <ul class="scholar-topics">
+                        <li>Computational Biophysics</li>
+                        <li>Deformable Membrane and Vesicle Dynamics</li>
+                        <li>Cytoskeletal Networks</li>
+                        <li>Biomolecular Condensates</li>
+                        <li>Intelligent Active Matter</li>
+                    </ul>
+
+                    <h4 class="scholar-heading">
+                        TOOLS &amp; SOFTWARE
+                    </h4>
+
+                    <div class="scholar-tools">
+                        <span>Python</span>
+                        <span>Fortran</span>
+                        <span>LAMMPS</span>
+                        <span>VMD</span>
+                        <span>NumPy</span>
+                        <span>Matplotlib</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
         </div>
 
-
-  <!-- SAUBHAGYA LENKA -->
-
-<div class="person-card research-scholar-card">
-
-    <img
-        src="Saubhagya_imag.jpg"
-        alt="Saubhagya Lenka"
-        class="person-photo research-photo"
-    >
-
-    <div class="person-info">
-
-        <div class="person-role">
-            Research Scholar
-        </div>
-
-        <h3 class="person-name">
-            Saubhagya Lenka
-        </h3>
-
-        <p class="person-details">
-            Ph.D. Scholar
-            <br>
-            Department of Physics
-            <br>
-            Indian Institute of Technology Bhubaneswar
-            <br><br>
-
-            <strong>Education:</strong>
-            <br>
-            M.Sc. in Physics — Indian Institute of Technology Bhubaneswar
-            <br>
-            B.Sc. — Utkal University, Odisha
-        </p>
-
-        <p class="person-research">
-            Research interests in computational biophysics,
-            deformable membrane and vesicle dynamics,
-            cytoskeletal networks, biomolecular condensates,
-            and intelligent active matter systems.
-        </p>
-
-        <div class="person-tags">
-
-            <span class="person-tag">
-                Computational Biophysics
-            </span>
-
-            <span class="person-tag">
-                Computational Modelling of Dynamic Deformable Membranes and Vesicles
-            </span>
-
-            <span class="person-tag">
-                Membrane Dynamics
-            </span>
-
-            <span class="person-tag">
-                Cytoskeletal Networks
-            </span>
-
-        </div>
-
-    </div>
-
-</div>
 
         <!-- =========================
              MASTER STUDENTS
